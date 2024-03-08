@@ -28,24 +28,7 @@ import ScrollToTop from './markup/Element/ScrollToTop';
 import PortfolioFullWidth from './markup/Pages/Portfolio/PortfolioFullWidth';
 
 function App() {
-	const [body_, setbody_] = useState();
-	const [header, setHeader] = useState("fixed");
-	const [header_, setHeader_] = useState();
-	let scrollPosition = useScrollPosition();
 
-	useEffect(() => {
-		setbody_(document.querySelector("body"));
-		setHeader_(document.getElementsByClassName("main-bar-wraper"));
-	}, []);
-
-
-	var element = document.getElementById("fix-header");
-
-	if (typeof (element) != 'undefined' && element != null) {
-		header === "fixed" && scrollPosition > 10
-			? header_ && header_[0].classList.add("is-fixed")
-			: header_ && header_[0].classList.remove("is-fixed");
-	}
 	return (
 		<>
 			<div className="page-wraper">

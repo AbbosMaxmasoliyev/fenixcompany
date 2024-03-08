@@ -1,5 +1,4 @@
 import React, { useEffect, useState, Component } from 'react';
-import useScrollPosition from "use-scroll-position";
 import './css/plugins.css';
 import './css/style.css';
 import './css/templete.css';

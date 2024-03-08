@@ -32,13 +32,13 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
 }
 
-.line
-{
+.line {
   display: block;
   width: 100%;
   height: 20px;
@@ -46,4 +46,18 @@
 
 
 
+#masonry {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 500px));
+  grid-template-rows: repeat(auto-fill, minmax(250px, 300px));
+  gap: 20px;
+  padding: 20px;
+}
 
+
+#masonry li {
+  width: 100%;
+  height: 100%;
+  max-width: 100% !important;
+}

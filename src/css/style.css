@@ -10507,6 +10507,7 @@ ul[class*="list-"]{
 .dlab-tilte,
 .dlab-tilte-inner {
     position: relative;
+    height: 100%;
 }
 .dlab-tilte-inner {
     display: inline-block;
@@ -10560,11 +10561,13 @@ ul[class*="list-"]{
 .dlab-media,
 .dlab-post-media {
     position: relative;
+    height: 100%;
 }
 .dlab-media img,
 .dlab-post-media img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
 }
 /* Box Background */
 .dlab-box-bg{

@@ -6,6 +6,7 @@ import './css/templete.css';
 import './css/skin/skin-3.css';
 import './plugins/slick/slick.min.css';
 import './plugins/slick/slick-theme.min.css';
+import './App.css';
 import 'react-modal-video/css/modal-video.min.css';
 
 import { BrowserRouter, Outlet, Route, Routes } from 'react-router-dom';

@@ -1,7 +1,5 @@
 import React, { Component, useState, useEffect, Fragment } from 'react';
 import { Link } from 'react-router-dom';
-import SimpleReactLightbox from 'simple-react-lightbox';
-import { SRLWrapper, useLightbox } from 'simple-react-lightbox';
 import Header from '../../Layout/Header1';
 import Footer from '../../Layout/footer6';
 import PageTitle from '../../Layout/PageTitle';
@@ -32,9 +30,8 @@ const imageBlog = [
 
 //Light Gallery on icon click 
 const Iconimage = props => {
-	const { openLightbox } = useLightbox()
 	return (
-		<Link to={"#"} onClick={() => openLightbox(props.imageToOpen)} className="mfp-link portfolio-fullscreen" >
+		<Link to={"#"} className="mfp-link portfolio-fullscreen" >
 			<i className="ti-fullscreen icon-bx-xs"></i>
 		</Link>
 	)
@@ -98,33 +95,30 @@ function PortfolioItem() {
 						<TagLi name="Design" handlesettag={setTag} tagActive={tag === 'Design' ? true : false} />
 					</ul>
 				</div>
-				<SimpleReactLightbox>
-					<SRLWrapper >
-						<div className="clearfix">
-							<ul id="masonry" className="container dlab-gallery-listing gallery-grid-4 gallery mfp-gallery port-style1">
 
-								{filteredImages.map((item, index) => (
-									<li className="web design card-container col-lg-3.5 col-md-6 col-xs-12 col-sm-6 p-a0" key={index}>
-										<div className="dlab-box dlab-gallery-box">
-											<div className="dlab-media dlab-img-overlay1 dlab-img-effect">
-												<img src={item.Large} alt="" />
-												<div className="overlay-bx">
-													<div className="overlay-icon align-b text-white text-left">
-														<div className="text-white text-left port-box">
-															<h5>{item.name}</h5>
-															<p>{item.info}</p>
-															<Iconimage />
-														</div>
-													</div>
+				<div className="clearfix">
+					<ul id="masonry" className="container dlab-gallery-listing gallery-grid-4 gallery mfp-gallery port-style1">
+
+						{filteredImages.map((item, index) => (
+							<li className="web design card-container col-lg-3.5 col-md-6 col-xs-12 col-sm-6 p-a0" key={index}>
+								<div className="dlab-box dlab-gallery-box">
+									<div className="dlab-media dlab-img-overlay1 dlab-img-effect">
+										<img src={item.Large} alt="" />
+										<div className="overlay-bx">
+											<div className="overlay-icon align-b text-white text-left">
+												<div className="text-white text-left port-box">
+													<h5>{item.name}</h5>
+													<p>{item.info}</p>
+													<Iconimage />
 												</div>
 											</div>
 										</div>
-									</li>
-								))}
-							</ul>
-						</div>
-					</SRLWrapper>
-				</SimpleReactLightbox>
+									</div>
+								</div>
+							</li>
+						))}
+					</ul>
+				</div>
 
 			</div>
 		</>

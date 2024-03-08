@@ -108,36 +108,34 @@ function PortfolioItem() {
 							<TagLi name="Laravel" handlesettag={setTag} tagActive={tag === 'Laravel' ? true : false} />
 						</ul>
 					</div>
-					<SimpleReactLightbox>
-						<SRLWrapper >
-							<div className="">
-								<ul id="masonry" className="dlab-gallery-listing gallery-grid-4 mfp-gallery ">
 
-									{filteredImages.map((item, index) => (
-										<li className="card-container col-xl-3 col-lg-4 col-md-6 col-sm-6 m-b30 drupal php wordpress" key={index}>
-											<div className="dlab-box portfolio-box">
-												<div className="dlab-media dlab-img-effect dlab-img-overlay1"> <img src={item.Large} alt="" />
-													<div className="dlab-info-has p-a15 bg-primary">
-														<Link to={"#"} className="site-button outline radius-xl white">Wordpress</Link>
-														<Link to={"#"} className="site-button outline radius-xl white pull-right">Vist Site</Link>
-													</div>
-													<div className="overlay-bx">
-														<div className="overlay-icon text-white p-lr10">
-															<h5>Website Name</h5>
-															<p className="m-b10">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
-															<Iconimage />
-															<a href="https://www.google.com/" target="bank"><i className="ti-arrow-top-right icon-bx-xs"></i></a>
-														</div>
+					<div className="">
+						<ul id="masonry" className="dlab-gallery-listing gallery-grid-4 mfp-gallery ">
 
-													</div>
-												</div>
+							{filteredImages.map((item, index) => (
+								<li className="card-container col-xl-3 col-lg-4 col-md-6 col-sm-6 m-b30 drupal php wordpress" key={index}>
+									<div className="dlab-box portfolio-box">
+										<div className="dlab-media dlab-img-effect dlab-img-overlay1"> <img src={item.Large} alt="" />
+											<div className="dlab-info-has p-a15 bg-primary">
+												<Link to={"#"} className="site-button outline radius-xl white">Wordpress</Link>
+												<Link to={"#"} className="site-button outline radius-xl white pull-right">Vist Site</Link>
 											</div>
-										</li>
-									))}
-								</ul>
-							</div>
-						</SRLWrapper>
-					</SimpleReactLightbox>
+											<div className="overlay-bx">
+												<div className="overlay-icon text-white p-lr10">
+													<h5>Website Name</h5>
+													<p className="m-b10">Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots</p>
+													<Iconimage />
+													<a href="https://www.google.com/" target="bank"><i className="ti-arrow-top-right icon-bx-xs"></i></a>
+												</div>
+
+											</div>
+										</div>
+									</div>
+								</li>
+							))}
+						</ul>
+					</div>
+
 				</div>
 			</div>
 		</>

@@ -1,0 +1,64 @@
+* {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', 'Poppins'
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+.images img
+{
+  width: 265.2px!important;
+  height: 265.2px!important;
+}
+
+.item .client-logo img{
+  width: 250px;
+}
+
+
+.row
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.dlab-box
+{
+  margin: 20px 0;
+}
+
+.overlay-black-dark:after{
+  opacity: 0.5!important;
+}
+
+.kow-image
+{
+  display: flex;
+  justify-content: space-around;
+}
+.kow-image .thumb-img{
+  width: 350px;
+  height: 350px;
+}
+.kow-image .thumb-img img{
+  width: 350px;
+  height: 350px;
+  display: block;
+}
+
+.slick-track
+{
+  display: flex!important;
+  justify-content: space-around;
+  align-items: center;
+}
+
